@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如偏分散效果</title>
+	<link rel="stylesheet" type="text/css" href="css/first.css">
+</head>
+<body>
+	<div class="allContainer">
+		<div class="contain"></div>
+	</div>
+</body>
+	<script src="lib/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/frament.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var fragementConfig = {
+				container:'.contain',
+				line:10,		//行数
+				column:24,		//列数
+				width:1000,	//宽度
+				animeTime:8000,
+				img:'images/1.JPG'	//	图片路径
+			};
+			fragmentImg(fragementConfig);
+		});
+	</script>
+</html>
