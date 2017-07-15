@@ -43,5 +43,12 @@ ul li{
 	display: block;
 	background-repeat: no-repeat;
 	float:left;
-	position: relative;	//少了这一个效果完全不同
+	position: relative;
+}
+
+.showPic{
+	width: 100px;
+	height: 300px;
+	position:absolute;
+	/*display: none;*/
 }
