@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PPT</title>
+	<style type="text/css">
+		.showPic{
+			margin:0;
+			padding:0;
+		}
+		.pict{
+			float:left;
+			width: 1200px;
+			height: 300px;
+
+		}
+		p{
+
+			
+			border:1px solid black;
+			
+			width: 500px;
+
+		}
+		.picture{
+			width:800px;
+			height:300px;
+			vertical-align: center;
+		}
+		li{
+			float:left;
+			margin:5px;
+			display: inline;   /*没什么效果*/
+		}
+		#d2{
+			height: 600px;
+		}
+		#d5{
+			height: 800px;
+		}
+	</style>
+</head>
+<body>
+<div class="allContainer">
+
+<div class="showPic">
+	<img src="images/2.jpg" alt="first" id="0"  class="pict">
+	<img src="images/3.jpg" alt="second" id="1" class="pict">
+	<img src="images/4.jpg" alt="third" id="2" class="pict">
+	<img src="images/5.jpg" alt="forth" id="3" class="pict">
+	<p>快速修正：确保不是图片造成这种情况，使用 overflow:hidden 来切除多余的部分。
+•双倍边距bug处理 IE6 时，另一个需要记住的事情是，如果在和浮动方向相同的方向上设置外边距(margin)，会引发双倍边距。快速修正：给浮动设置 display:inline; 而且不用担心，它依然是块级元素。
+•3像素间距是指挨着浮动元素的文本会神奇的被踢出去3像素，好像浮动元素的周围有一个奇怪的力场一样。快速修正：在受影响的文本上设置宽度或高度。
+•IE7 中，底边距 bug是当浮动父元素有浮动子元素时，这些子元素的底边距会被父元素忽略掉。快速修正：用父元素的底内补白(padding)代替。</p>
+</div>
+<ul>
+	<li><img src="images/1.jpg" alt="1" class="picture"></li>
+	<li><img src="images/2.jpg" alt="2" class="picture" id="d2"></li>
+	<li><img src="images/3.jpg" alt="3" class="picture"></li>
+	<li><img src="images/4.jpg" alt="4" class="picture"></li>
+	<li><img src="images/5.jpg" alt="5" class="picture" id="d5"></li>
+	<li><img src="images/2.jpg" alt="6" class="picture"></li>
+<ul>
+<button value="go" id="go">go</button>
+<script type="text/javascript">
+	document.getElementById("go").onclick=function(){
+		window.open("index.html");
+	}
+	</script>
+<body>
+<html>
